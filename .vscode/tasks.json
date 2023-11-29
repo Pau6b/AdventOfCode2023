@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+   
+    "tasks": [
+        
+        {
+            "label": "build and run",     //It's name of the task , you can have several tasks 
+            "type": "shell",    //type can be either 'shell' or 'process' , more details will be given below
+            "command": "g++",   
+            "args": [
+                "-g",   //gnu debugging flag , only necessary if you want to perform debugging on file  
+                "${file}",  //${file} gives full path of the file
+                "-o",   
+                "${workspaceFolder}\\build\\${fileBasenameNoExtension}",    //output file name
+                "&&",   //to join building and running of the file
+                "${workspaceFolder}\\build\\${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",    //defines to which group the task belongs
+                "isDefault": true
+            },
+            "presentation": {   //Explained in detail below
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "clear": false,
+                "showReuseMessage": false
+            },
+            "problemMatcher": "$gcc"
+        },
+        
+    ]
+}
