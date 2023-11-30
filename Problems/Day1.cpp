@@ -3,8 +3,8 @@
 
 namespace aoc
 {
-void Day1Prob1()
+void Prob1()
 {
-    std::cout << "Hello!\n";
+    std::cout << "Prob1!\n";
 }
 }

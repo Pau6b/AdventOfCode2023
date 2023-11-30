@@ -2,5 +2,5 @@
 
 namespace aoc
 {
-void Day1Prob1();
+void Prob1();
 }
