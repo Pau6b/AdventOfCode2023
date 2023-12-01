@@ -2,6 +2,6 @@
 
 int main()
 {
-    aoc::Prob1();
+    aoc::Day1Prob2();
     return 0;
 }
