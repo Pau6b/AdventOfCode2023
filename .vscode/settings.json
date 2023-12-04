@@ -56,6 +56,14 @@
         "xutility": "cpp",
         "algorithm": "cpp",
         "optional": "cpp",
-        "array": "cpp"
+        "array": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "sstream": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "numeric": "cpp"
     }
 }
