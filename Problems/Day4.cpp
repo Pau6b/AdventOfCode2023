@@ -36,7 +36,7 @@ uint64_t ComputeCardMatches(const std::string& i_str)
 
     //ignore |
     std::string remaining;
-    lineStream.seekg(lineStream.tellg()+3);
+    lineStream.seekg(lineStream.tellg() + 3);
 
     uint32_t winningNumbersQuantity = 0;
     uint32_t number;
@@ -89,7 +89,9 @@ void Day4Prob2()
         }
         ++currentCard;
     }
-    const uint64_t result = std::accumulate(std::begin(accumulatedCards), std::begin(accumulatedCards) + currentCard, 0);
+    auto endIt = std::begin(accumulatedCards);
+    std::advance(endIt, currentCard);
+    const uint64_t result = std::accumulate(std::begin(accumulatedCards), endIt, 0);
     std::cout << result << '\n';
 }
 }
