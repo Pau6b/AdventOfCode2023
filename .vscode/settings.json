@@ -64,6 +64,8 @@
         "unordered_set": "cpp",
         "vector": "cpp",
         "xhash": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "map": "cpp",
+        "xtree": "cpp"
     }
 }

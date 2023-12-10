@@ -2,9 +2,9 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include <unordered_set>
-#include <iostream>
 #include <inttypes.h>
+#include <iostream>
+#include <unordered_set>
 #include <array>
 #include <numeric>
 #include <iterator>
@@ -36,7 +36,8 @@ uint64_t ComputeCardMatches(const std::string& i_str)
 
     //ignore |
     std::string remaining;
-    lineStream.seekg(lineStream.tellg() + 3);
+    const int32_t currentPos = lineStream.tellg();
+    lineStream.seekg((currentPos + 3));
 
     uint32_t winningNumbersQuantity = 0;
     uint32_t number;
