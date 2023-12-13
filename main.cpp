@@ -7,9 +7,10 @@
 #include "Problems/Day7.h"
 #include "Problems/Day8.h"
 #include "Problems/Day9.h"
+#include "Problems/Day10.h"
 
 int main()
 {
-    aoc::Day9Prob2();
+    aoc::Day10Prob1();
     return 0;
 }

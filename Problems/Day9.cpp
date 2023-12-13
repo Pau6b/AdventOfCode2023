@@ -9,6 +9,8 @@
 namespace aoc
 {
 
+namespace
+{
 std::vector<std::vector<int32_t>> ParseSequences(const std::string& i_path)
 {
     std::ifstream input(i_path);
@@ -73,6 +75,7 @@ int32_t PredictPreviousSequenceNumber(const std::vector<int32_t>& i_sequence)
     }
 
     return predictions[0];
+}
 }
 
 void Day9Prob1()
