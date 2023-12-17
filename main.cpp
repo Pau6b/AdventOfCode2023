@@ -11,6 +11,6 @@
 
 int main()
 {
-    aoc::Day10Prob1();
+    aoc::Day10Prob2();
     return 0;
 }
