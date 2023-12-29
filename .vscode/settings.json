@@ -66,6 +66,7 @@
         "xhash": "cpp",
         "numeric": "cpp",
         "map": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "set": "cpp"
     }
 }
